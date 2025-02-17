@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Study\\projects\\StarWars\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0534827-7BE6-46D5-B30D-6EA9793D0AE5}|StarWars.csproj|D:\\Study\\projects\\StarWars\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B0534827-7BE6-46D5-B30D-6EA9793D0AE5}|StarWars.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0534827-7BE6-46D5-B30D-6EA9793D0AE5}|StarWars.csproj|d:\\study\\projects\\starwars\\gameover.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B0534827-7BE6-46D5-B30D-6EA9793D0AE5}|StarWars.csproj|solutionrelative:gameover.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0534827-7BE6-46D5-B30D-6EA9793D0AE5}|StarWars.csproj|D:\\Study\\projects\\StarWars\\bomb.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B0534827-7BE6-46D5-B30D-6EA9793D0AE5}|StarWars.csproj|solutionrelative:bomb.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0534827-7BE6-46D5-B30D-6EA9793D0AE5}|StarWars.csproj|D:\\Study\\projects\\StarWars\\spaceship.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B0534827-7BE6-46D5-B30D-6EA9793D0AE5}|StarWars.csproj|solutionrelative:spaceship.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameOver.xaml",
+              "DocumentMoniker": "D:\\Study\\projects\\StarWars\\GameOver.xaml",
+              "RelativeDocumentMoniker": "GameOver.xaml",
+              "ToolTip": "D:\\Study\\projects\\StarWars\\GameOver.xaml",
+              "RelativeToolTip": "GameOver.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-17T16:06:06.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bomb.xaml",
+              "DocumentMoniker": "D:\\Study\\projects\\StarWars\\Bomb.xaml",
+              "RelativeDocumentMoniker": "Bomb.xaml",
+              "ToolTip": "D:\\Study\\projects\\StarWars\\Bomb.xaml",
+              "RelativeToolTip": "Bomb.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-16T19:52:05.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpaceShip.xaml",
+              "DocumentMoniker": "D:\\Study\\projects\\StarWars\\SpaceShip.xaml",
+              "RelativeDocumentMoniker": "SpaceShip.xaml",
+              "ToolTip": "D:\\Study\\projects\\StarWars\\SpaceShip.xaml",
+              "RelativeToolTip": "SpaceShip.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-16T19:07:35.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Study\\projects\\StarWars\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Study\\projects\\StarWars\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-16T16:32:54.816Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

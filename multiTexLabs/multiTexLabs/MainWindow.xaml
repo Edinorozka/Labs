@@ -1,0 +1,142 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:multiTexLabs"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors" x:Class="multiTexLabs.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="920">
+    <Window.Resources>
+        <Style x:Key="TitleStyle" TargetType="{x:Type TextBlock}"/>
+        <Storyboard x:Key="StoryboardChaneImages" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:09" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="StoryboardChangetext" Completed="Storyboard_Completed">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <RectangleGeometry x:Key="Zone1"  Rect="0,0,335,288"/>
+        <Storyboard x:Key="StoryboardTextSwipe" Completed="Storyboard_Completed_1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="1.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="-280"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="StoryboardTextAnimationFinish" Completed="Storyboard_Completed_2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <b:Interaction.Triggers>
+        <b:EventTrigger EventName="Loaded">
+            <b:ControlStoryboardAction ControlStoryboardOption="Play" Storyboard="{StaticResource StoryboardChaneImages}"/>
+        </b:EventTrigger>
+    </b:Interaction.Triggers>
+    <Grid Background="White" Margin="0,0,0,-16" Width="900" Height="470">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Style="{DynamicResource Maintext}" x:Name="Title" TextWrapping="Wrap" Text="Буквоед" Margin="0,0,0,331" HorizontalAlignment="Center" Grid.Column="1" FontSize="50" Width="800" TextAlignment="Center"/>
+        <Button Margin="607,378,20,24" Grid.Column="1" Click="Button_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Rectangle x:Name="btn1" Stroke="Red" Grid.ColumnSpan="2" RadiusX="8" RadiusY="10"/>
+                        <Label x:Name="buttonCaption" VerticalAlignment="Center"
+                               HorizontalAlignment="Center" Content="Открыть в браузере" FontSize="20" Background="White" Foreground="Red"></Label>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="btn1" Property="Fill" Value="Red" />
+                            <Setter TargetName="buttonCaption" Property="Background" Value="Red" />
+                            <Setter TargetName="buttonCaption" Property="Foreground" Value="White" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image x:Name="image" Margin="361,108,19,108" Source="/Image1.png" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="image1" Grid.ColumnSpan="2" Margin="361,108,19,108" Source="/Image3.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="image2" Grid.ColumnSpan="2" Margin="361,108,20,108" Source="/Image4.png" Stretch="Fill" Opacity="0" Height="254" Width="520"/>
+        <Grid x:Name="grid" Grid.ColumnSpan="2" Margin="26,108,539,0" Height="561" VerticalAlignment="Top" Clip="{DynamicResource Zone1}">
+            <b:Interaction.Triggers>
+                <b:EventTrigger EventName="Loaded">
+                    <b:ControlStoryboardAction ControlStoryboardOption="Play" Storyboard="{StaticResource StoryboardChangetext}"/>
+                </b:EventTrigger>
+            </b:Interaction.Triggers>
+            <TextBlock Style="{DynamicResource Maintext}" x:Name="Text" TextWrapping="Wrap" Text="«Буквоед» – крупнейшая сеть книжных магазинов в Санкт-Петербурге и Северо-Западном регионе России. Магазины сети входят в одно из самых крупных книготорговых объединений нашей страны — розничную сеть «Читай-город — Буквоед»." FontSize="30" VerticalAlignment="Center" Height="562" RenderTransformOrigin="0.5,0.5">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+
+
+
+    </Grid>
+</Window>
