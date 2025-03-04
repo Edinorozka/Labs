@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Messanger</string>
+    <string name="chat">Чат</string>
+    <string name="chats">Чаты</string>
+    <string name="contacts">Контакты</string>
+    <string name="settings">Настройки</string>
+    <string name="loginTitle">Войти</string>
+    <string name="reqTitle">Регистрация</string>
+    <string name="authTitle">Авторизация</string>
+
+    <string name="login_failed">Неправильные имя пользователя или пароль</string>
+    <string name="noEnter">Все поля должны быть заполнены</string>
+</resources>

@@ -1,0 +1,16 @@
+﻿  Sha256.cpp
+D:\Study\projects\Sha256\Sha256.cpp(49,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(89,63): warning C4244: аргумент: преобразование "unsigned __int64" в "uint32_t", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(89,112): warning C4244: аргумент: преобразование "unsigned __int64" в "uint32_t", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(89,21): warning C4244: инициализация: преобразование "unsigned __int64" в "uint32_t", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(90,62): warning C4244: аргумент: преобразование "unsigned __int64" в "uint32_t", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(90,110): warning C4244: аргумент: преобразование "unsigned __int64" в "uint32_t", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(90,21): warning C4244: инициализация: преобразование "unsigned __int64" в "uint32_t", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(107,24): warning C4244: инициализация: преобразование "unsigned __int64" в "uint32_t", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(186,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(188,17): warning C4244: инициализация: преобразование "double" в "__int64", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(197,17): warning C4244: инициализация: преобразование "double" в "__int64", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(207,19): warning C4244: инициализация: преобразование "__int64" в "long double", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(208,15): warning C4244: инициализация: преобразование "__int64" в "double", возможна потеря данных
+D:\Study\projects\Sha256\Sha256.cpp(214,35): warning C4244: аргумент: преобразование "long double" в "__int64", возможна потеря данных
+  Sha256.vcxproj -> D:\Study\projects\Sha256\x64\Debug\Sha256.exe
